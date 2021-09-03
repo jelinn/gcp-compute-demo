@@ -8,4 +8,5 @@ output "private_ip" {
 
 output "priv-key"{
   value = tls_private_key.ssh-key.private_key_pem
+  sensitive = true
 }
